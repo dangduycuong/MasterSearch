@@ -13,6 +13,9 @@
 		53AC754023E92AE300869027 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC753E23E92AE300869027 /* Main.storyboard */; };
 		53AC754223E92AE500869027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53AC754123E92AE500869027 /* Assets.xcassets */; };
 		53AC754523E92AE500869027 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC754323E92AE500869027 /* LaunchScreen.storyboard */; };
+		53AC754D23E9796100869027 /* CocktaildbVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC754C23E9796100869027 /* CocktaildbVC.swift */; };
+		53AC755023E979DC00869027 /* BaseCocktaildbModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC754F23E979DC00869027 /* BaseCocktaildbModel.swift */; };
+		53AC755323E97B7300869027 /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC755223E97B7300869027 /* BaseNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		53AC754123E92AE500869027 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53AC754423E92AE500869027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53AC754623E92AE500869027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53AC754C23E9796100869027 /* CocktaildbVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktaildbVC.swift; sourceTree = "<group>"; };
+		53AC754F23E979DC00869027 /* BaseCocktaildbModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCocktaildbModel.swift; sourceTree = "<group>"; };
+		53AC755223E97B7300869027 /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,34 @@
 		53AC753723E92AE300869027 /* TestFilter */ = {
 			isa = PBXGroup;
 			children = (
+				53AC755123E97B5900869027 /* BaseRouter */,
+				53AC754E23E979B400869027 /* Model */,
 				53AC753823E92AE300869027 /* AppDelegate.swift */,
 				53AC753A23E92AE300869027 /* SceneDelegate.swift */,
 				53AC753C23E92AE300869027 /* ViewController.swift */,
+				53AC754C23E9796100869027 /* CocktaildbVC.swift */,
 				53AC753E23E92AE300869027 /* Main.storyboard */,
 				53AC754123E92AE500869027 /* Assets.xcassets */,
 				53AC754323E92AE500869027 /* LaunchScreen.storyboard */,
 				53AC754623E92AE500869027 /* Info.plist */,
 			);
 			path = TestFilter;
+			sourceTree = "<group>";
+		};
+		53AC754E23E979B400869027 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53AC754F23E979DC00869027 /* BaseCocktaildbModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53AC755123E97B5900869027 /* BaseRouter */ = {
+			isa = PBXGroup;
+			children = (
+				53AC755223E97B7300869027 /* BaseNetwork.swift */,
+			);
+			path = BaseRouter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +165,10 @@
 			files = (
 				53AC753D23E92AE300869027 /* ViewController.swift in Sources */,
 				53AC753923E92AE300869027 /* AppDelegate.swift in Sources */,
+				53AC754D23E9796100869027 /* CocktaildbVC.swift in Sources */,
+				53AC755323E97B7300869027 /* BaseNetwork.swift in Sources */,
 				53AC753B23E92AE300869027 /* SceneDelegate.swift in Sources */,
+				53AC755023E979DC00869027 /* BaseCocktaildbModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

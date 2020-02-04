@@ -100,6 +100,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
 //    }
     
     
+    @IBAction func nextCooktail(_ sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(identifier: "CocktaildbVC") as! CocktaildbVC
+        present(vc, animated: true, completion: nil)
+    }
+    
 }
 
 extension ViewController: UISearchResultsUpdating {

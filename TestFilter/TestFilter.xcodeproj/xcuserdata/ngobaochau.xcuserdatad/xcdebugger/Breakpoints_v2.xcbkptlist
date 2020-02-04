@@ -14,8 +14,8 @@
             filePath = "TestFilter/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "searchBar(_:selectedScopeButtonIndexDidChange:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,39 +30,39 @@
             filePath = "TestFilter/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "updateSearchResults(for:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "76116C28-A04D-4452-BC0B-79C7C919FBA4 - d6870416b70e4ea7"
+                  uuid = "76116C28-A04D-4452-BC0B-79C7C919FBA4 - 2203024cc74a4c2e"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "TestFilter.ViewController.updateSearchResults(for: __C.UISearchController) -&gt; ()"
                   moduleName = "TestFilter"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ngobaochau/Desktop/TestFilter/TestFilter/ViewController.swift"
+                  urlString = "file:///Users/ngobaochau/Documents/Github/MasterSearch/TestFilter/TestFilter/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "107"
-                  endingLineNumber = "107"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
                   offsetFromSymbolStart = "43">
                </Location>
                <Location
-                  uuid = "76116C28-A04D-4452-BC0B-79C7C919FBA4 - d1434c4d1e04051e"
+                  uuid = "76116C28-A04D-4452-BC0B-79C7C919FBA4 - 25c74a176e400797"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.String) -&gt; Swift.Bool in TestFilter.ViewController.updateSearchResults(for: __C.UISearchController) -&gt; ()"
                   moduleName = "TestFilter"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ngobaochau/Desktop/TestFilter/TestFilter/ViewController.swift"
+                  urlString = "file:///Users/ngobaochau/Documents/Github/MasterSearch/TestFilter/TestFilter/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "108"
-                  endingLineNumber = "108"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
                   offsetFromSymbolStart = "96">
                </Location>
             </Locations>
@@ -94,8 +94,8 @@
             filePath = "TestFilter/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "searchBar(_:selectedScopeButtonIndexDidChange:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -103,16 +103,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2012F531-56C1-4CAF-A66D-ABF5CBBC1245"
+            uuid = "6B4216A0-E1BD-4256-8913-965F280D86DF"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TestFilter/ViewController.swift"
+            filePath = "TestFilter/CocktaildbVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
-            landmarkName = "searchBarSearchButtonClicked(_:)"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8D097529-591C-4EB6-A9AA-63E908098131"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestFilter/CocktaildbVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
