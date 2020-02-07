@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53A8CED323ED6F8300828F5C /* CallAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A8CED223ED6F8300828F5C /* CallAPI.swift */; };
+		53A8CED723ED7AD600828F5C /* CocktailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A8CED523ED7AD600828F5C /* CocktailCell.swift */; };
+		53A8CED823ED7AD600828F5C /* CocktailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53A8CED623ED7AD600828F5C /* CocktailCell.xib */; };
 		53AC753923E92AE300869027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC753823E92AE300869027 /* AppDelegate.swift */; };
 		53AC753B23E92AE300869027 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC753A23E92AE300869027 /* SceneDelegate.swift */; };
 		53AC753D23E92AE300869027 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC753C23E92AE300869027 /* ViewController.swift */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53A8CED223ED6F8300828F5C /* CallAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallAPI.swift; sourceTree = "<group>"; };
+		53A8CED523ED7AD600828F5C /* CocktailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailCell.swift; sourceTree = "<group>"; };
+		53A8CED623ED7AD600828F5C /* CocktailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CocktailCell.xib; sourceTree = "<group>"; };
 		53AC753523E92AE300869027 /* TestFilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestFilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53AC753823E92AE300869027 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53AC753A23E92AE300869027 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53A8CED423ED7AC000828F5C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53A8CED523ED7AD600828F5C /* CocktailCell.swift */,
+				53A8CED623ED7AD600828F5C /* CocktailCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		53AC752C23E92AE300869027 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +77,7 @@
 		53AC753723E92AE300869027 /* TestFilter */ = {
 			isa = PBXGroup;
 			children = (
+				53A8CED423ED7AC000828F5C /* View */,
 				53AC755123E97B5900869027 /* BaseRouter */,
 				53AC754E23E979B400869027 /* Model */,
 				53AC753823E92AE300869027 /* AppDelegate.swift */,
@@ -88,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				53AC755223E97B7300869027 /* BaseNetwork.swift */,
+				53A8CED223ED6F8300828F5C /* CallAPI.swift */,
 			);
 			path = BaseRouter;
 			sourceTree = "<group>";
@@ -153,6 +170,7 @@
 				53AC754523E92AE500869027 /* LaunchScreen.storyboard in Resources */,
 				53AC754223E92AE500869027 /* Assets.xcassets in Resources */,
 				53AC754023E92AE300869027 /* Main.storyboard in Resources */,
+				53A8CED823ED7AD600828F5C /* CocktailCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,10 +183,12 @@
 			files = (
 				53AC753D23E92AE300869027 /* ViewController.swift in Sources */,
 				53AC753923E92AE300869027 /* AppDelegate.swift in Sources */,
+				53A8CED323ED6F8300828F5C /* CallAPI.swift in Sources */,
 				53AC754D23E9796100869027 /* CocktaildbVC.swift in Sources */,
 				53AC755323E97B7300869027 /* BaseNetwork.swift in Sources */,
 				53AC753B23E92AE300869027 /* SceneDelegate.swift in Sources */,
 				53AC755023E979DC00869027 /* BaseCocktaildbModel.swift in Sources */,
+				53A8CED723ED7AD600828F5C /* CocktailCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

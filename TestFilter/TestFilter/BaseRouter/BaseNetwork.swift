@@ -51,9 +51,10 @@ enum URLFactory: String {
     case chi_tiet
     case thiet_bi
     case diem_xung_yeu
+    case search
 
     var URL: URL {
-        func generalUrlComponent(host: String, port: Int, path: String, queryItems: [URLQueryItem]) -> URL {
+        func generalUrlComponent(host: String, port: Int?, path: String, queryItems: [URLQueryItem]) -> URL {
             var urlComponents = URLComponents()
             urlComponents.scheme = "http"
             urlComponents.host = host
@@ -86,8 +87,10 @@ enum URLFactory: String {
                 URLQueryItem(name: "password", value: "UserDefaults.standard.string(forKey: UserDefaultKeys.password)"),
                 URLQueryItem(name: "imeiMoblie", value: "IOS")
                 ])
+        case .search:
+            return generalUrlComponent(host: "www.thecocktaildb.com", port: nil, path: "/api/json/v1/1/search.php", queryItems: [
+                URLQueryItem(name: "rowPage", value: "10")
+                ])
         }
     }
-
-
 }
