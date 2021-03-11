@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="riI-oN-02U">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -129,28 +129,35 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="119.86607142857142"/>
         </scene>
-        <!--CocktaildbVC-->
+        <!--Youtubev3VC-->
         <scene sceneID="L26-uc-fuM">
             <objects>
-                <viewController storyboardIdentifier="CocktaildbVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="egr-fG-scH" customClass="CocktaildbVC" customModule="TestFilter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Youtubev3VC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="egr-fG-scH" customClass="Youtubev3VC" customModule="TestFilter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lAO-s2-fo5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cz0-DW-jdn">
-                                <rect key="frame" x="8" y="190" width="398" height="664"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cz0-DW-jdn">
+                                <rect key="frame" x="8" y="218" width="398" height="636"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="egr-fG-scH" id="MUg-rd-mAE"/>
+                                    <outlet property="delegate" destination="egr-fG-scH" id="h3d-X6-aHV"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Pi-7H-zx1">
-                                <rect key="frame" x="8" y="88" width="46" height="30"/>
+                                <rect key="frame" x="8" y="132" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="dismissButton:" destination="egr-fG-scH" eventType="touchUpInside" id="czf-QH-x6Q"/>
                                 </connections>
                             </button>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="a0U-CP-yh3">
-                                <rect key="frame" x="8" y="126" width="306" height="56"/>
+                                <rect key="frame" x="8" y="162" width="406" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="egr-fG-scH" id="H8h-ih-qJZ"/>
+                                </connections>
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -158,17 +165,74 @@
                             <constraint firstItem="a0U-CP-yh3" firstAttribute="leading" secondItem="AzW-lf-oXi" secondAttribute="leading" constant="8" id="4Ga-8F-W4A"/>
                             <constraint firstItem="7Pi-7H-zx1" firstAttribute="leading" secondItem="AzW-lf-oXi" secondAttribute="leading" constant="8" id="87x-eh-jaI"/>
                             <constraint firstItem="AzW-lf-oXi" firstAttribute="trailing" secondItem="cz0-DW-jdn" secondAttribute="trailing" constant="8" id="C6A-bk-HZy"/>
-                            <constraint firstItem="a0U-CP-yh3" firstAttribute="top" secondItem="7Pi-7H-zx1" secondAttribute="bottom" constant="8" id="PZS-bJ-oe8"/>
+                            <constraint firstItem="a0U-CP-yh3" firstAttribute="top" secondItem="7Pi-7H-zx1" secondAttribute="bottom" id="PZS-bJ-oe8"/>
                             <constraint firstItem="AzW-lf-oXi" firstAttribute="bottom" secondItem="cz0-DW-jdn" secondAttribute="bottom" constant="8" id="UHd-Fa-9NU"/>
-                            <constraint firstItem="AzW-lf-oXi" firstAttribute="trailing" secondItem="a0U-CP-yh3" secondAttribute="trailing" constant="100" id="cBg-qa-mVq"/>
+                            <constraint firstItem="AzW-lf-oXi" firstAttribute="trailing" secondItem="a0U-CP-yh3" secondAttribute="trailing" id="cBg-qa-mVq"/>
                             <constraint firstItem="7Pi-7H-zx1" firstAttribute="top" secondItem="AzW-lf-oXi" secondAttribute="top" constant="44" id="kho-sR-TMW"/>
-                            <constraint firstItem="cz0-DW-jdn" firstAttribute="top" secondItem="a0U-CP-yh3" secondAttribute="bottom" constant="8" id="sRG-JX-nev"/>
+                            <constraint firstItem="cz0-DW-jdn" firstAttribute="top" secondItem="a0U-CP-yh3" secondAttribute="bottom" id="sRG-JX-nev"/>
                             <constraint firstItem="cz0-DW-jdn" firstAttribute="leading" secondItem="AzW-lf-oXi" secondAttribute="leading" constant="8" id="wA6-ez-obH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AzW-lf-oXi"/>
                     </view>
+                    <navigationItem key="navigationItem" id="NqI-8o-H4N"/>
+                    <connections>
+                        <outlet property="searchBar" destination="a0U-CP-yh3" id="nhV-R4-a1F"/>
+                        <outlet property="tableView" destination="cz0-DW-jdn" id="CJ5-Aq-V2W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pgC-is-qnO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1901.449275362319" y="119.86607142857142"/>
+        </scene>
+        <!--Youtube Suggest View Controller-->
+        <scene sceneID="wQR-ZB-dGe">
+            <objects>
+                <viewController storyboardIdentifier="YoutubeSuggestViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uV8-L9-Wzf" customClass="YoutubeSuggestViewController" customModule="TestFilter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="58x-uR-S7d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P99-aV-aUn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="uV8-L9-Wzf" id="S3F-Bn-R99"/>
+                                    <outlet property="delegate" destination="uV8-L9-Wzf" id="qeK-9g-PoW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4ca-4e-Z7v" firstAttribute="bottom" secondItem="P99-aV-aUn" secondAttribute="bottom" id="6um-03-9qv"/>
+                            <constraint firstItem="P99-aV-aUn" firstAttribute="top" secondItem="4ca-4e-Z7v" secondAttribute="top" id="9YN-19-FaB"/>
+                            <constraint firstItem="P99-aV-aUn" firstAttribute="leading" secondItem="4ca-4e-Z7v" secondAttribute="leading" id="WQU-XR-JR9"/>
+                            <constraint firstItem="4ca-4e-Z7v" firstAttribute="trailing" secondItem="P99-aV-aUn" secondAttribute="trailing" id="yjd-uR-AGU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4ca-4e-Z7v"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="P99-aV-aUn" id="Si0-p6-m28"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wc6-gv-IEu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2971.0144927536235" y="119.86607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LTK-fJ-bsS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="riI-oN-02U" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RHl-E6-22W">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="egr-fG-scH" kind="relationship" relationship="rootViewController" id="68Z-gv-dM8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tBO-jN-k7c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="991.304347826087" y="119.86607142857142"/>
         </scene>

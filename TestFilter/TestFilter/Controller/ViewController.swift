@@ -101,8 +101,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func nextCooktail(_ sender: UIButton) {
-        let vc = storyboard?.instantiateViewController(identifier: "CocktaildbVC") as! CocktaildbVC
-        present(vc, animated: true, completion: nil)
+//        let vc = storyboard?.instantiateViewController(identifier: "CocktaildbVC") as! Youtube v3VC
+//        present(vc, animated: true, completion: nil)
     }
     
 }
