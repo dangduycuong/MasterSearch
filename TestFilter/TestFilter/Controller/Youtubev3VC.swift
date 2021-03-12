@@ -8,6 +8,8 @@
 
 import UIKit
 import SwiftyJSON
+import AVKit
+import AVFoundation
 
 enum Youtubev3APIType {
     case suggestedVideos

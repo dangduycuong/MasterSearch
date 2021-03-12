@@ -9,32 +9,31 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="280" id="KGk-i7-Jjw" customClass="SuggestedVideosCell" customModule="TestFilter" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="346" height="280"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="238" id="KGk-i7-Jjw" customClass="SuggestedVideosCell" customModule="TestFilter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="238"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="346" height="280"/>
+                <rect key="frame" x="0.0" y="0.0" width="346" height="238"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FGk-Kh-Yll">
-                        <rect key="frame" x="8" y="65" width="200" height="150"/>
+                        <rect key="frame" x="8" y="0.0" width="330" height="150"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="200" id="3A0-uE-BpB"/>
-                            <constraint firstAttribute="height" constant="150" id="hMn-18-Rqv"/>
+                            <constraint firstAttribute="height" priority="750" constant="150" id="ZdA-D8-y7S"/>
                         </constraints>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Otb-3B-gak">
-                        <rect key="frame" x="216" y="8" width="122" height="67"/>
+                        <rect key="frame" x="8" y="158" width="330" height="67"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EHh-kD-8u1">
-                                <rect key="frame" x="0.0" y="0.0" width="122" height="33"/>
+                                <rect key="frame" x="0.0" y="0.0" width="330" height="33"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ypl-K2-nWb">
-                                <rect key="frame" x="0.0" y="34" width="122" height="33"/>
+                                <rect key="frame" x="0.0" y="34" width="330" height="33"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -43,7 +42,7 @@
                         </subviews>
                     </stackView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ijh-Jd-2Hl">
-                        <rect key="frame" x="8" y="279.5" width="330" height="0.5"/>
+                        <rect key="frame" x="8" y="237.5" width="330" height="0.5"/>
                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="0.5" id="PtC-xa-urh"/>
@@ -52,15 +51,16 @@
                 </subviews>
                 <color key="backgroundColor" red="0.3485559225" green="0.62407565119999997" blue="0.82380425930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="Otb-3B-gak" secondAttribute="trailing" constant="8" id="3XB-3H-jqX"/>
-                    <constraint firstItem="ijh-Jd-2Hl" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Otb-3B-gak" secondAttribute="bottom" constant="8" id="8S4-Uw-EIo"/>
+                    <constraint firstItem="FGk-Kh-Yll" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7ZC-1u-O4y"/>
                     <constraint firstAttribute="trailing" secondItem="ijh-Jd-2Hl" secondAttribute="trailing" constant="8" id="E11-0K-Vsl"/>
+                    <constraint firstItem="ijh-Jd-2Hl" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Otb-3B-gak" secondAttribute="bottom" constant="8" id="E2w-b5-BTx"/>
                     <constraint firstItem="ijh-Jd-2Hl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="GbQ-zK-30p"/>
-                    <constraint firstItem="FGk-Kh-Yll" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="HJT-Xe-lpG"/>
                     <constraint firstAttribute="bottom" secondItem="ijh-Jd-2Hl" secondAttribute="bottom" id="LFH-ed-acn"/>
-                    <constraint firstItem="Otb-3B-gak" firstAttribute="leading" secondItem="FGk-Kh-Yll" secondAttribute="trailing" constant="8" id="VeX-oS-ALs"/>
-                    <constraint firstItem="FGk-Kh-Yll" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mmN-zX-7ai"/>
-                    <constraint firstItem="Otb-3B-gak" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="xLa-6p-M6i"/>
+                    <constraint firstItem="FGk-Kh-Yll" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Tca-29-Pvg"/>
+                    <constraint firstAttribute="trailing" secondItem="FGk-Kh-Yll" secondAttribute="trailing" constant="8" id="VUe-ZP-D8K"/>
+                    <constraint firstAttribute="trailing" secondItem="Otb-3B-gak" secondAttribute="trailing" constant="8" id="qOO-RI-S1x"/>
+                    <constraint firstItem="Otb-3B-gak" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="smE-SL-2aO"/>
+                    <constraint firstItem="Otb-3B-gak" firstAttribute="top" secondItem="FGk-Kh-Yll" secondAttribute="bottom" constant="8" id="vRF-Cy-9sH"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -69,7 +69,7 @@
                 <outlet property="thumbnailsImageView" destination="FGk-Kh-Yll" id="JEF-to-VPT"/>
                 <outlet property="videoIdTextView" destination="Ypl-K2-nWb" id="HVY-Id-9Uv"/>
             </connections>
-            <point key="canvasLocation" x="150.72463768115944" y="103.79464285714285"/>
+            <point key="canvasLocation" x="150.72463768115944" y="89.732142857142847"/>
         </tableViewCell>
     </objects>
 </document>
